@@ -28,13 +28,20 @@ void draw(){
   //create many circles using maths !
   for (int i=0; i<circleDeg; i+=9) {
   // noStroke();
-  if(i%2==0){ //if its even - but make sure i increments in not just even numbers
-   fill(red,green,blue,alpha);
-  }else //if its odd
-  {
-    fill(0);
-  }
-   
+  
+  //if you want to alterate colours from to another use this function below
+    
+//  if(i%2==0){ //if its even - but make sure i increments in not just even numbers
+//   fill(red,green,blue,alpha);
+//  }else //if its odd
+//  {
+//    fill(0);
+//  }
+  
+  //fill with colour
+  fill(red,green,blue,alpha);
+  
+   //sohcahtoa to do the maths to figure a point on the circumference given the center point and the radius
    float angle = radians(i);
    float x = (width/2) + (cos(angle) * radius) ;
    float y = (height/2) + (sin(angle) * radius) ;
