@@ -3,6 +3,9 @@
 // Dec 12th 2014
 // ashleyjamesbrown
 
+
+//grid based drawing
+
 int red=0;
 int green=200;
 int blue=0;
@@ -21,7 +24,10 @@ void setup(){
 
 void draw(){
   
- for (int i = 0; i < cols; i++) {
+}
+
+void drawGrid(){
+  for (int i = 0; i < cols; i++) {
     // Begin loop for rows
     for (int j = 0; j < rows; j++) {
       //position of the start of the rectangle is to take each position in the column and row and then mutiply it by the size of the rectangle
@@ -38,10 +44,7 @@ void draw(){
     //  popMatrix();
     }
   }
-  
-  
 }
-
 
 
 void generateColour(){
@@ -65,15 +68,14 @@ void keyPressed(){
  if (key==' '){
   background(0); 
  }
- else
- if (key=='1') {
-  generateColour();
- }
+ 
  
 }
 
 
 
 void mousePressed(){
+  generateColour();
+  drawGrid();
 //
 }

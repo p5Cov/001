@@ -3,6 +3,8 @@
 // Dec 12th 2014
 // ashleyjamesbrown
 
+//grid based using arrays to store nubmers
+
 int red=0;
 int green=200;
 int blue=0;
