@@ -1,3 +1,5 @@
+
+
 // sketch comments
 // author
 
@@ -6,14 +8,24 @@
 
 
 
+
 //setup
 void setup() {
-  
-}
 
+}
 
 //main loop
 void draw() {
-  
 
 }
+
+
+void keyPressed(){
+
+}
+
+void mousePressed(){
+ 
+}
+
+
