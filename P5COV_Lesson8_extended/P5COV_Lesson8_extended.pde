@@ -133,5 +133,5 @@ void keyPressed(){
 
 void mousePressed(){
 //
- // makeNewImage();
+  makeNewImage();
 }

@@ -3,7 +3,7 @@
 // Dec 12th 2014
 // ashleyjamesbrown
 
-
+//introducing images and pixels and the array structure of colours
 
 
 PImage img;
