@@ -10,7 +10,7 @@ int blue=0;
 int alpha=90;
 
 float radius = 72.0;
-int deg = 12;
+int deg = 30;
 int circleDeg = 360;
 
 //a little bit of maths to go from polar (real world) to cartesian(2d)
@@ -19,16 +19,21 @@ int circleDeg = 360;
 
 void setup(){
   size(800,600);
-  background(0);
+  background(255);
 
 }
 
 void draw(){
  
   //create many circles using maths !
-  for (int i=0; i<circleDeg; i+=deg) {
+  for (int i=0; i<circleDeg; i+=9) {
   // noStroke();
+  if(i%2==0){ //if its even - but make sure i increments in not just even numbers
    fill(red,green,blue,alpha);
+  }else //if its odd
+  {
+    fill(0);
+  }
    
    float angle = radians(i);
    float x = (width/2) + (cos(angle) * radius) ;
