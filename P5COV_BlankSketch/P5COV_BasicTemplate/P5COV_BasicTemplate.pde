@@ -21,5 +21,7 @@ void draw() {
 
 //keyboard input
 void keyPressed(){
- saveFrame("p5CovImage-###.jpg"); 
+  if (key=='s'){
+   saveFrame("p5CovImage-###.jpg");
+  } 
 }

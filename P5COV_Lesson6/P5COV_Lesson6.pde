@@ -23,7 +23,7 @@ void setup(){
 
 
 void draw(){
-  
+  drawGrid();
 }
 
 void drawGrid(){
@@ -36,12 +36,12 @@ void drawGrid(){
       
       fill(red,green,blue);
       stroke(0);
-     // pushMatrix();
-     // translate(x,y);
-     // rotate(45);
-     // rect(0,0,gridScale,gridScale);
-      rect(x,y,gridScale,gridScale); //in this we are drawing the square the exact size of the distance we are using so we get nice full boxes.
-    //  popMatrix();
+      pushMatrix();
+      translate(x,y);
+      rotate(mouseY);
+      rect(0,0,mouseX,mouseY);
+     // rect(x,y,gridScale,gridScale); //in this we are drawing the square the exact size of the distance we are using so we get nice full boxes.
+      popMatrix();
     }
   }
 }
