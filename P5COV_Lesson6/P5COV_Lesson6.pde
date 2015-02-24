@@ -59,6 +59,7 @@ void generateColour(){
 
 
 
+
 void keyPressed(){
   
  if (key=='s'){
